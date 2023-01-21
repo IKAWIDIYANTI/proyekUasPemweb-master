@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bengkel Putra Prima</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="css/mecss.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar custom-navbar navbar-expand-md navbar-dark sticky-top fixed-top"
+        style="background-color: rgb(80, 145, 88)">
+        <div class="container-fluid mt-2 mb-2">
+            <a class="navbar-brand" href="index.html">
+                BENGKEL PUTRA PRIMA
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="layanan.html">Produk & Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="booking.html">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tentang_Kami.html">Tentang Kami</a>
+                    </li>
+                </ul>
+
+                <!-- Icon -->
+                <div class="navbar-nav ms-auto">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <a href="login.html" class="btn btn-light" style="background-color: rgb(255, 255, 255);" type="submit">
+                            Login
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-8 mt-4 container text-bg-light ">
+
+                <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+                    aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-lg-end">
+                        <li class="breadcrumb-item"><a href="index.html"
+                                style="text-decoration: none; color: Black;">Home</a></li>
+                        <li class="breadcrumb-item"><a href="booking.html"
+                                style="text-decoration: none; color: rgb(2, 170, 61);">Booking</a></li>
+                    </ol>
+                </nav>
+
+                <div class="container-fluid">
+                    <h2>Booking Service</h2>
+                    <form class="form-horizontal">
+
+                        <div class="mt-lg-3 col-sm-10 mt-lg-0 mt-2">
+                            <label class="control-label col-lg-5 mt-lg-3 col-sm-10" for="jenis">Jenis
+                                Kendaraan:</label>
+                            <select class="form-select">
+                                <option value="Minibus" selected>Minibus</option>
+                                <option value="Sedan">Sedan</option>
+                                <option value="Truk">Truk</option>
+                                <option value="Bus">Bus</option>
+                            </select>
+                        </div>
+
+                        <div class="mt-lg-3 mt-lg-0 mt-2">
+                            <label class="control-label col-lg-5" for="kategori">Kategori Service: </label>
+                            <br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1" checked>
+                                <label class="form-check-label" for="besar">
+                                    Service Besar
+                                </label>
+                            </div>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="ringan">
+                                    Service Ringan
+                                </label>
+                            </div>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="repair">
+                                    Body Repair
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="mt-lg-3 mt-lg-0 mt-2">
+                            <label for="keluhan">Keluhan:</label>
+                            <div class="form-floating col-lg-10">
+                                <textarea class="form-control" id="keluhan" style="height: 100px"></textarea>
+                                <label for="keluhan">Tulis Keluhan Atau Service</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-lg-3 mt-lg-0 mt-2">
+                            <label class="control-label col-lg-5" for="nama">Nama Pelanggan:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="nama">
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-lg-3 mt-lg-0 mt-2">
+                            <label class="control-label col-lg-5" for="tgl">Tanggal Booking:</label>
+                            <div class="col-sm-10">
+                                <input type="Date" class="form-control" id="tgl">
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-lg-3 mt-lg-0 mt-2">
+                            <label class="control-label col-lg-5" for="nopol">Nomor Polisi:</label>
+                            <div class="col-sm-10">
+                                <input type="text" placeholder="F 1234 FAS" class="form-control" id="nopol">
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-lg-3 mt-lg-0 mt-2">
+                            <label class="control-label col-lg-5" for="req">Request Montir:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="req">
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-lg-3 mt-lg-0 mt-2">
+                            <label class="control-label col-lg-5" for="hp">Nomor HP:</label>
+                            <div class="col-sm-10">
+                                <input type="number" placeholder="+62 --- ---- ----" class="form-control" id="hp">
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-lg-3 mt-lg-0 mt-2">
+                            <label class="control-label col-lg-5" for="email">E-mail:</label>
+                            <div class="col-sm-10">
+                                <input type="email" placeholder="R4f------ @gmail.com" class="form-control" id="email">
+                            </div>
+                        </div>
+
+
+                        <div class="mt-5 mb-5">
+                            <button type="submit" class="btn btn-primary">Simpan</button>
+                            <a href="booking.html" type="reset" class="btn btn-outline-secondary">Reset</a>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- /Main -->
+
+    <!-- Footer -->
+    <div class="container-fluid">
+        <footer class="my-1">
+            <div class="justify-content-center border-top nav">
+                <img class="" src="assets/img/logo.png" alt="">
+
+            </div>
+            <p class="text-center">&copy; Develop By Mahasiswa STT-NF @ 2022</p>
+        </footer>
+    </div>
+
+    <!-- /Footer -->
+
+    <!-- JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mejs.js"></script>
+</body>
+
+</html>
